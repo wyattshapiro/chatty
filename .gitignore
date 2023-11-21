@@ -1,0 +1,10 @@
+# Mac file
+.DS_Store
+
+# virtual environments
+*.env
+venv/
+
+# data storage for chatbot
+data/
+storage/

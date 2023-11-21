@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  chat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./storage:/app/storage
+    env_file:
+      - climb-bot.env
+    stdin_open: true 
+    tty: true
